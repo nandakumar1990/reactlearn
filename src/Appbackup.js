@@ -18,9 +18,6 @@ import "./routing/commonStyle.css";
 import UnControlled from "./routing/unControlled";
 import Counter from "./routing/counter";
 import ReduxCounter from "./routing/reduxCounter";
-import MaterialDemo from "./routing/materialDemo";
-import FormikForm from "./routing/formikForm";
-import FetchDemo from "./routing/fetchDemo";
 export default function App(){
   return (
     <BrowserRouter>
@@ -38,9 +35,7 @@ export default function App(){
       <Route path="unControlled" element={<UnControlled />}/>
       <Route path="counter" element={<Counter />}/>
       <Route path="reduxCounter" element={<ReduxCounter />}/>
-      <Route path="materialDemo" element={<MaterialDemo/>}/>
-      <Route path="formikForm" element={<FormikForm/>}/>
-      <Route path="fetchDemo" element={<FetchDemo/>}/>
+
         <Route path="college" element={<College />}>
           <Route path="teacher" element={<Teacher />}/>
           <Route path="student" element={<Student />}/>
